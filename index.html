@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="logo" href="#">Unit converter</a>
+    </nav>
+
+    <div class="button-bar">
+        <button class="button" id="button1" onclick="toggleText(1)">Length</button>
+
+        <button class="button"  id="button2" onclick="toggleText(2)">Weight</button>
+        <button class="button" onclick="toggleText(3)">Temperature</button>
+    </div>
+
+    <div class="button-text" id="text1">
+        <div class="container">
+            <div class="box">
+                <h2>Enter Length</h2>
+                <input type="text" id="value" class="text-box" placeholder="Enter Length">
+                <div>
+                    <br>
+                    <select class="select" id="fromUnit">
+                        <option value="">Select Conversion</option>
+                        <option value="mm">Millimeter </option>
+                        <option value="cm">Centimeter </option>
+                        <option value="m">Meter</option>
+                        <option value="km">Kilometer</option>
+                    </select>
+                    <p>to</p>
+                    <select class="select"  id="toUnit">
+                        <option value="">Select Conversion</option>
+                        <option value="mm">Millimeter </option>
+                        <option value="cm">Centimeter </option>
+                        <option value="m">Meter</option>
+                        <option value="km">Kilometer</option>
+                    </select>
+
+                </div>
+
+                <div class="enter">
+                    <button class="button" onclick="convertUnits()" id="calculateBtn">Calculate</button>
+                </div>
+
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="button-text" id="text2">
+        <div class="container">
+            <div class="box">
+                <h2>Enter  Weight</h2>
+                <input type="text" id="weight" class="text-box" placeholder="Enter Weight">
+                <div>
+                    <br>
+                    <select class="select" id="fromUnit2">
+                        <option value="">Select Conversion</option>
+                        <option value="mg">Milligram </option>
+                        <option value="g">Gram </option>
+                        <option value="kg">Kilograms</option>
+                    </select>
+                    <p>to</p>
+                    <select class="select" id="toUnit2">
+                        <option value="">Select Conversion</option>
+                        <option value="mg">Milligram </option>
+                        <option value="g">Gram </option>
+                        <option value="kg">Kilograms</option>
+                    </select>
+
+                </div>
+
+                <div class="enter">
+                    <button class="button" onclick="convertUnits2()">Calculate</button>
+                </div>
+
+                <p id="result2"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-text" id="text3">
+        <div class="container">
+            <div class="box">
+                <h2>Enter  Temperature</h2>
+                <input type="text" id="temp" class="text-box" placeholder="Enter Temperature">
+                <div>
+                    <br>
+                    <select class="select" id="fromUnit3">
+                        <option value="">Select Conversion</option>
+                        <option value="c">celcius </option>
+                        <option value="k">kelvin </option>
+                        <option value="f">fahrenheit</option>
+                    </select>
+                    <p>to</p>
+                    <select class="select" id="toUnit3">
+                        <option value="">Select Conversion</option>
+                        <option value="c">celcius </option>
+                        <option value="k">kelvin </option>
+                        <option value="f">fahrenheit</option>
+                    </select>
+
+                </div>
+
+                <div class="enter">
+                    <button class="button" onclick="convertUnits3()">Calculate</button>
+                </div>
+
+                <p id="result3"></p>
+            </div>
+        </div>
+    </div>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
